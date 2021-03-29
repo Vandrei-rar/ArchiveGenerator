@@ -20,6 +20,7 @@ public class main {
 		res = leia.nextInt();
 		
 		gravar grav = new gravar();
+		ler leitor = new ler();
 		
 		switch (res) {
 		case 1: {
@@ -28,6 +29,7 @@ public class main {
 			break;
 		}
 		case 2: {
+			leitor.leitor();
 			break;
 		}
 		case 0: {
