@@ -12,7 +12,7 @@ public class main {
 	}
 	
 	public static void menu() throws IOException {
-		System.out.println("Selecione sua opção\n(1)Gravar no arquivo\t(2)Ler o arquivo\n(0)Sair");
+		System.out.println("Selecione sua opção\n(1)Gravar no arquivo\t(2)Ler o arquivo\n(3)Deletar o arquivo\t(0)Sair");
 		System.out.print(">");
 		int res;
 		
@@ -21,6 +21,7 @@ public class main {
 		
 		gravar grav = new gravar();
 		ler leitor = new ler();
+		deletar del = new deletar();
 		
 		switch (res) {
 		case 1: {
@@ -30,6 +31,10 @@ public class main {
 		}
 		case 2: {
 			leitor.leitor();
+			break;
+		}
+		case 3: {
+			del.deletar();
 			break;
 		}
 		case 0: {
