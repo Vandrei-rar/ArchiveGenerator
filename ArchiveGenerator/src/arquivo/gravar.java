@@ -13,7 +13,7 @@ public class gravar {
 		Scanner leia = new Scanner(System.in); // Instanciar Scanner para criar a função de leitura na entrada.
 		
 		String msg;
-		File verArq = new File("C:\\Users\\Public\\Documents\\Texto.txt");
+		File verArq = new File("C:\\Users\\Public\\Documents\\infos.csv");
 		
 		if(verArq.exists()) { // Verifica se o arquivo existe.
 			System.out.println("\nO arquivo já existe\n");
@@ -24,8 +24,9 @@ public class gravar {
 			
 			System.out.print("Digite sua mensagem: ");
 			msg = leia.nextLine(); // Função nextLine serve para pegar toda a linha de uma String.
+			msg = msg + ";texto aleatorio";
 			
-			FileWriter arq = new FileWriter("C:\\Users\\Public\\Documents\\Texto.txt"); // File writer cria o arquivo.
+			FileWriter arq = new FileWriter("C:\\Users\\Public\\Documents\\infos.csv"); // File writer cria o arquivo.
 			PrintWriter escreva = new PrintWriter(arq); // Escreve os dados no arquivo indicado em -> PrintWriter(ArquivoCriadoAqui).
 			
 			escreva.printf("%s", msg); // Importante¹!! Como no C é necessario indicar ..(%tipoVariavel", variavel) para esse caso e semelhantes.

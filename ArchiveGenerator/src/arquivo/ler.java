@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ler {
 	
 	public void leitor() throws IOException{
-	BufferedReader buffRead = new BufferedReader(new FileReader("C:\\Users\\Public\\Documents\\Texto.txt"));
+	BufferedReader buffRead = new BufferedReader(new FileReader("C:\\Users\\Public\\Documents\\infos.csv"));
 	String linha = "";
 	while (true) {
 		if (linha != null) {
